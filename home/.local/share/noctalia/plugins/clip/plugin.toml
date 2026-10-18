@@ -1,0 +1,13 @@
+id          = "isagi/clip"
+name        = "Clipboard shortcut"
+version     = "1.0.0"
+plugin_api  = 3
+author      = "isagi"
+license     = "MIT"
+description = "Type /clip in the launcher to open clipboard history."
+
+[[launcher_provider]]
+id     = "clip"
+entry  = "launcher.luau"
+prefix = "clip"
+glyph  = "clipboard"

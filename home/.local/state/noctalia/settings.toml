@@ -41,6 +41,9 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
         show_unlock_hint = true
         show_weather = true
 
+[plugins]
+enabled = [ "isagi/clip" ]
+
 [shell]
 font_family = "Noto Sans Mono"
 

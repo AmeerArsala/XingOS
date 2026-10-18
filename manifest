@@ -7,6 +7,7 @@
 .config/ghostty/config.ghostty
 .config/noctalia/config.toml
 .local/state/noctalia/settings.toml
+.local/share/noctalia/plugins/clip
 .config/fcitx5
 .config/helix
 .config/yazi
