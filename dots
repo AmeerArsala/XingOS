@@ -78,6 +78,7 @@ cmd_status() {
     for e in "${entries[@]}"; do
         live="$(live_of "$e")"; repo="$(repo_of "$e")"
         [[ -e "$live" ]] || { echo "missing live: $e"; changed=1; continue; }
+        [[ -e "$repo" ]] || { echo "new (not in repo yet): $e"; changed=1; continue; }
         if [[ -d "$live" ]]; then
             out="$(rsync -rcn --delete --itemize-changes "${excludes[@]}" "$live/" "$repo/" 2>&1 || true)"
         else
