@@ -67,3 +67,7 @@ To stop tracking something, delete its line and its copy under `home/` (or `syst
 Notes: oh-my-zsh itself is not stored here (`.zshrc` is; `apply` clones upstream). Noctalia keeps
 UI-changed settings in `~/.local/state/noctalia/settings.toml`, which overrides `~/.config/noctalia/config.toml`;
 both are tracked.
+
+## License
+
+MIT, see [LICENSE](LICENSE). Bundled third-party files (e.g. the yazi flavor) keep their own licenses.
