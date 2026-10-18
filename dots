@@ -131,12 +131,13 @@ cmd_add() {
     echo "tracking: $p"
 }
 
-sub="${1:-sync}"; [[ $# -gt 0 ]] && shift
+sub=sync
+if [[ $# -gt 0 && "$1" != -* ]]; then sub="$1"; shift; fi   # `dots -m msg` == `dots sync -m msg`
 case "$sub" in
     sync) cmd_sync "$@" ;;
     status) cmd_status ;;
     apply) cmd_apply "$@" ;;
     add) cmd_add "$@" ;;
-    -h|--help|help) sed -n '2,6p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//' ;;
+    help|-h|--help) sed -n '2,6p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//' ;;
     *) echo "unknown command: $sub (try: sync, status, apply, add)" >&2; exit 2 ;;
 esac
