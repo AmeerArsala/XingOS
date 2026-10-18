@@ -112,6 +112,11 @@ cmd_apply() {
         copy "$repo" "$live"; echo "applied: $e"
     done
     [[ -d "$bk" ]] && echo "Previous versions backed up in $bk"
+    # oh-my-zsh is upstream code, not vendored here: .zshrc is tracked, the framework is cloned on demand
+    if [[ ! -d "$HOME/.oh-my-zsh" ]]; then
+        echo "Installing oh-my-zsh..."
+        git clone -q --depth 1 https://github.com/ohmyzsh/ohmyzsh.git "$HOME/.oh-my-zsh"
+    fi
     if [[ ! -e "$HOME/.local/bin/dots" || ! -L "$HOME/.local/bin/dots" ]]; then
         mkdir -p "$HOME/.local/bin"; ln -sf "$REPO/dots" "$HOME/.local/bin/dots"
     fi

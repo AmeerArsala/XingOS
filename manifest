@@ -9,6 +9,7 @@
 .config/fcitx5
 .config/helix
 .config/yazi
+.zshrc
 .config/starship.toml
 .config/mimeapps.list
 .config/xdg-terminals.list

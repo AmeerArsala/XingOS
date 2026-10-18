@@ -11,4 +11,6 @@ Copy-based (no symlinks), so apps that rewrite their own config (Noctalia, ghost
     dots apply --system   # also restore /etc files (sudo)
     dots add PATH   # track another file/dir
 
+oh-my-zsh itself is not vendored: `.zshrc` is tracked and `dots apply` clones upstream oh-my-zsh if missing.
+
 Tracked paths live in `manifest`. Fresh machine: clone, then `./dots apply` (it symlinks itself to ~/.local/bin/dots).
