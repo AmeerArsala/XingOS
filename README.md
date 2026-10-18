@@ -3,6 +3,8 @@
 niri + Noctalia (v5) + ghostty on Fedora, plus fcitx5 pinyin, helix, yazi, starship, zsh, and greetd.
 Based on shen-nm/niri-config and nixxoq/dotfiles.
 
+![Desktop screenshot: niri + Noctalia + ghostty running fastfetch](docs/screenshot.png)
+
 The repo is managed by `dots`, a small copy-based script (no symlinks, so apps that rewrite their own
 config, like Noctalia, can't break anything). It needs only `bash`, `rsync` and `git`.
 
