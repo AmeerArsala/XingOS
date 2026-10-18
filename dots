@@ -132,7 +132,8 @@ cmd_add() {
 }
 
 sub=sync
-if [[ $# -gt 0 && "$1" != -* ]]; then sub="$1"; shift; fi   # `dots -m msg` == `dots sync -m msg`
+if [[ "${1:-}" == -h || "${1:-}" == --help ]]; then sub=help; shift
+elif [[ $# -gt 0 && "$1" != -* ]]; then sub="$1"; shift; fi   # `dots -m msg` == `dots sync -m msg`
 case "$sub" in
     sync) cmd_sync "$@" ;;
     status) cmd_status ;;
