@@ -1,0 +1,40 @@
+// Rounded corners everywhere; fix borders on transparent windows (ghostty background-opacity)
+window-rule {
+    geometry-corner-radius 8
+    clip-to-geometry true
+    draw-border-with-background false
+}
+
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+
+window-rule {
+    match app-id=r#"^[Ss]team$"# title=r#"^notificationtoasts"#
+    open-floating true
+    default-floating-position x=20 y=20 relative-to="bottom-right"
+    open-focused false
+}
+
+// Floating ghostty terminal (Mod+T)
+window-rule {
+    match title="^scratchpad-term$"
+    open-floating true
+    default-column-width { fixed 800; }
+    default-window-height { fixed 600; }
+    default-floating-position x=30 y=30 relative-to="top-right"
+    background-effect {
+        blur true
+        xray false
+    }
+}
+
+// Terminal blur (niri-native; ghostty's own background-blur isn't honored on niri)
+window-rule {
+    match app-id=r#"^com\.mitchellh\.ghostty$"#
+    background-effect {
+        blur true
+        xray false
+    }
+}

@@ -1,0 +1,79 @@
+# Based on shen-nm/dotfiles, with personal paths/accounts removed.
+[backdrop]
+blur_intensity = 0.62
+enabled = true
+tint_intensity = 0.23
+
+[bar.default]
+background_opacity = 0.47
+capsule_fill = "primary"
+font_weight = 600
+margin_edge = 8
+margin_ends = 8
+start = [ "launcher", "workspaces", "audio_visualizer" ]
+end = [ "media", "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "session" ]
+
+[dock]
+auto_hide = true
+background_opacity = 0.63
+enabled = true
+icon_size = 37
+item_spacing = 20
+margin_edge = 10
+reserve_space = false
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 300.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = false
+    timeout = 660.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = false
+    timeout = 900.0
+
+[location]
+auto_locate = true
+
+[osd]
+background_opacity = 0.81
+scale = 0.9
+
+[shell]
+niri_overview_type_to_launch_enabled = true
+polkit_agent = true
+
+    [shell.panel]
+    borders = false
+    launcher_placement = "attached"
+    transparency_mode = "glass"
+
+[theme]
+builtin = "Tokyo-Night"
+mode = "dark"
+source = "builtin"
+
+    [theme.templates]
+    builtin_ids = [ "ghostty", "niri", "gtk3", "gtk4", "qt" ]
+
+[widget.media]
+album_art_only = true
+art_size = 21
+hide_when_no_media = true
+max_length = 160
+
+[widget.network]
+show_label = false
+
+[widget.tray]
+drawer = true
+drawer_item_size = 18.0
+enabled = true

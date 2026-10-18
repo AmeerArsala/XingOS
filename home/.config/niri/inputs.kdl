@@ -1,0 +1,23 @@
+input {
+    keyboard {
+        xkb {
+            layout "us"
+            options "caps:escape"
+        }
+        numlock
+        repeat-delay 200
+        repeat-rate 25
+    }
+
+    touchpad {
+        tap
+        natural-scroll
+    }
+
+    mouse {
+        accel-profile "flat"
+    }
+
+    // Hover to focus (only windows already fully on screen, so scrolling stays predictable)
+    focus-follows-mouse max-scroll-amount="0%"
+}

@@ -1,0 +1,18 @@
+# Paths tracked by `dots`. One per line.
+#   relative path  -> relative to $HOME (file or directory)
+#   /absolute/path -> system file, snapshotted under system/ (restore needs sudo)
+#   !pattern       -> rsync exclude (generated/cache files)
+
+.config/niri
+.config/ghostty/config.ghostty
+.config/noctalia/config.toml
+.config/fcitx5
+.config/helix
+.config/yazi
+.config/starship.toml
+.config/mimeapps.list
+.config/xdg-terminals.list
+.local/share/applications/brave-browser.desktop
+/etc/greetd/config.toml
+
+!cached_layouts

@@ -1,0 +1,6 @@
+// Outputs are auto-detected. Run `niri msg outputs` and add blocks like:
+// output "eDP-1" {
+//     mode "2560x1600@165.004"
+//     scale 1.25
+//     variable-refresh-rate
+// }
