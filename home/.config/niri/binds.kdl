@@ -57,7 +57,7 @@ binds {
     // Mod+L is the input-method toggle (below)
 
     Mod+L hotkey-overlay-title="Toggle input method (pinyin)" { spawn "fcitx5-remote" "-t"; }
-    Mod+D repeat=false hotkey-overlay-title="Dictation (hyprwhspr)" { spawn-sh "$HOME/.local/bin/hyprwhspr record toggle"; }
+    Mod+D repeat=false hotkey-overlay-title="Dictation (hyprwhspr)" { spawn-sh "$HOME/.config/niri/scripts/dictation.sh toggle"; }
 
     // Move
     Mod+Ctrl+Left  { move-column-left; }
