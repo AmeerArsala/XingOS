@@ -53,11 +53,11 @@ binds {
     Mod+Right { focus-column-right; }
     Mod+H { focus-column-left; }
     Mod+J { focus-window-down; }
-    // Mod+K is dictation (hyprwhspr, below); Mod+Up still focuses up
+    Mod+K { focus-window-up; }
     // Mod+L is the input-method toggle (below)
 
     Mod+L hotkey-overlay-title="Toggle input method (pinyin)" { spawn "fcitx5-remote" "-t"; }
-    Mod+K repeat=false hotkey-overlay-title="Dictation (hyprwhspr)" { spawn-sh "$HOME/.local/bin/hyprwhspr record toggle"; }
+    Mod+D repeat=false hotkey-overlay-title="Dictation (hyprwhspr)" { spawn-sh "$HOME/.local/bin/hyprwhspr record toggle"; }
 
     // Move
     Mod+Ctrl+Left  { move-column-left; }
