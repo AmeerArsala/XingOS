@@ -11,7 +11,7 @@ font_weight = 600
 margin_edge = 8
 margin_ends = 8
 start = [ "launcher", "workspaces", "audio_visualizer" ]
-end = [ "media", "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "session" ]
+end = [ "media", "goodroot/noctwhspr:status", "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "session" ]
 
 [dock]
 auto_hide = true

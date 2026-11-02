@@ -1,0 +1,6 @@
+spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP=niri" "XDG_SESSION_DESKTOP=niri"
+spawn-at-startup "xwayland-satellite"
+// Bar, wallpaper, notifications, launcher and lockscreen
+spawn-at-startup "noctalia"
+spawn-at-startup "gnome-keyring-daemon" "--start" "--components=secrets"
+spawn-at-startup "fcitx5" "-d"

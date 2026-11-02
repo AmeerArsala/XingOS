@@ -143,3 +143,19 @@ export PATH="/home/isagi/.local/bin:$PATH"
 
 # opencode
 export PATH=/home/isagi/.opencode/bin:$PATH
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# pnpm
+export PNPM_HOME='/home/isagi/.local/share/pnpm'
+case ":$PATH:" in
+  ":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
+
+# strix
+export PATH=/home/isagi/.strix/bin:$PATH
+export STRIX_LLM="chatgpt/gpt-6.1-sol"

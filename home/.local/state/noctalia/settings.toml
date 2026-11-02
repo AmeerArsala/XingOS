@@ -42,7 +42,7 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
         show_weather = true
 
 [plugins]
-enabled = [ "isagi/clip" ]
+enabled = [ "isagi/clip", "goodroot/noctwhspr" ]
 
 [shell]
 font_family = "Noto Sans Mono"
@@ -56,6 +56,10 @@ wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "btop", "gtk3", "gtk4", "ghostty", "niri", "qt" ]
+
+        [theme.templates.user.noctwhspr_mic_osd]
+        input_path = "/home/isagi/.config/noctalia/templates/noctwhspr-mic-osd.css"
+        output_path = "/home/isagi/.config/hyprwhspr/theme/mic-osd.css"
 
 [wallpaper.default]
 path = "/home/isagi/Pictures/kai.jpeg"
