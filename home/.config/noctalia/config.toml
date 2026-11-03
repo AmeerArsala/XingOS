@@ -77,3 +77,7 @@ show_label = false
 drawer = true
 drawer_item_size = 18.0
 enabled = true
+
+# hyprwhspr is a managed install under ~/.local/share, not /usr/lib (noctwhspr's default)
+[widget."goodroot/noctwhspr:status"]
+root = "/home/isagi/.local/share/hyprwhspr/src"
