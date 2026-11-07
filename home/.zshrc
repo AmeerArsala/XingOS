@@ -159,3 +159,7 @@ esac
 # strix
 export PATH=/home/isagi/.strix/bin:$PATH
 export STRIX_LLM="chatgpt/gpt-6.1-sol"
+
+export JCODE_NO_TELEMETRY=1
+export JCODE_TELEMETRY=0
+export DO_NOT_TRACK=1

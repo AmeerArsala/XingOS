@@ -17,6 +17,7 @@ capstone-devel
 ccache
 clang
 clang-devel
+clapper
 cmake
 containerd.io
 cscope
@@ -75,6 +76,7 @@ man-db
 man-pages
 micro
 mingw64-gcc
+mosh
 nautilus
 ncdu
 NetworkManager-tui
@@ -117,6 +119,7 @@ ripgrep
 rpmfusion-free-release
 rpmfusion-nonfree-release
 rsync
+rustnet
 strace
 subversion
 swift-lang

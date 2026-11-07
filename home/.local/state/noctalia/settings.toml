@@ -69,3 +69,6 @@ path = "/home/isagi/Pictures/kai.jpeg"
 
 [wallpaper.monitors.eDP-1]
 path = "/home/isagi/Pictures/kai.jpeg"
+
+[widget.tray]
+pinned = [ "jcode-voice" ]
